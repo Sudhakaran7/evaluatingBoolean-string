@@ -1,0 +1,53 @@
+You are given a string, you have to evaluate the string which represents the boolean expression,
+An expression can either be:
+"t", evaluating to True;
+"f", evaluating to False;
+"!(expr)", evaluating to the logical NOT of the inner expression expr;
+"&(expr1,expr2,...)", evaluating to the logical AND of 2 or more inner expressions expr1, expr2, ...;
+"|(expr1,expr2,...)", evaluating to the logical OR of 2 or more inner expressions expr1, expr2, ...
+ 
+Input Description:
+S1 a string which represents boolean expression
+
+Output Description:
+True or Flase
+
+Sample Input:
+|(f,t)
+
+Sample Output:
+True
+
+Explanation:
+the given expression is "|(f,t)"
+doing "or" operation for False and True will give True
+
+Sample Input:
+!(t)
+
+Sample Output:
+False
+
+Sample Input:
+&(t,f,t)
+
+Sample Output:
+False
+
+Sample Input:
+!(t,f,f,t)
+
+Sample Output:
+False
+
+Sample Input:
+|(t,f,t,f)
+
+Sample Output:
+True
+
+Sample Input:
+&(f,f,f,f,t)
+
+Sample Output:
+False
